@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title> Ajay Singh | Portfolio </title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Ajay Singh</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Ajay Singh </h1>
+                    <h3 class="home__education">Software Engineer</h3>
+
+                    <div class="home__button">
+                        <a href="/assets/img/AjaySingh.pdf" download="AjaySingh.pdf" class="button button--ghost">
+    Download Resume
+</a>
+
+
+
+                        <a href="#about" class="button">About</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="assets/img/profile.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/ajay5ingh/" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/Ajayy-Singh" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://leetcode.com/u/Ajay5ingh/" target="_blank" class="home__social-link">
+                        <i class='bx bxl-dribbble'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="https://img.freepik.com/free-photo/funny-3d-asian-teenager_183364-80432.jpg?w=900&t=st=1706033813~exp=1706034413~hmac=348632ab5b69d00b279aad6eb6813351d66fecd9d16f7955054a54c731964c9f"
+                    alt="" class="about__img" width="100%" height="100%">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Education</h3>
+                            <span class="about__subtitle">B.Tech (CSE)</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">20+ Projects</span>
+                        </div>
+                        <div class="about__box">
+                            <img style="filter: invert(39%) sepia(19%) saturate(2200%) hue-rotate(235deg) brightness(95%) contrast(90%);"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACMElEQVR4AeyVO0tcQRiGh6RKIBdCihQpEpIikIQkkJAbCUlhJfgzBC1E0UJ/gTaiICjY+RcUsRXFK4KKCtqohYXgDbGwUfF5dT6dnT27Z8+uWCnvO9/sN5dnz8x+x3vulv/ugGkH/oMJjfgtLkmVHmkVlC68hh/hVFUK/OkJy8QjnKpKgb89YdLH1FAJ8B27P8bSjQKfascEfw9yE0H/SdDP66Y94TNWTOFeHOuXT+wR17HUSqP7fElMVDGgYKOs0tHVEWtwKPvBjPvkZ2I7FmzMR0KuCgEN9tFP7yYOYtMDOu+xZPe3wIcmLL2m0RcRnO61koBJMNvIVuo4ba0BNaYvZnNfkRD0BfFKtsgSunAdY/hktoHNUbTjPOHDDA5VFBoDO1lpsHn6STDS7qsaPIcFJeRI0GGf0Wuv3/ddDGxmYAlLX2j02iLkyQp+Nm/kMqH3a/Vl120652rxhWLgIdl/2KBaGEPfMP4cS9NqIodrBPvD+Da+UAxUcp+mGNTuj2kuBibBtjTRnATUmEFX9AFrI6tD/Usi5XZpNrBJdWinobyeLAemiYWAGhP0P51V3IetDu0Jw9cZw0512OacE+Svj4RcFQNq5g6Naq6eKD2k+YSlsP70We6g+YAFJeQrDagVB2q8vxHvYymuP+Vk/fAUE10KMFxo93dGslBJMFRYWYF2f4tseYwzKyvQCj4uh5LBWYC6uxZ27sFDuCxlAZ5CGMANeASXpSzAsgDxonMAAAD//zvaAYwAAAAGSURBVAMA1iVaOZSKNPYAAAAASUVORK5CYII="
+                                alt="Programming Languages" class="about__icon">
+
+                            <h3 class="about__title">Languages</h3>
+                            <span class="about__subtitle">HTML, CSS, JavaScript, React Js, Java, CPP</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        I am an aspiring Software Engineer with a solid foundation in both front-end and back-end web
+                        technologies. I create functional web pages with intuitive user interfaces, and I am actively
+                        looking to contribute to impactful software projects in a dynamic and innovative tech
+                        environment.
+                    </p>
+
+                    <a href="#contact" class="button about__button-contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My Abilities</span>
+            <h2 class="section__title">My Skills</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend Development</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Javascript</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Backend Development</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Node JS</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">javaScript</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <!-- <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name"></h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div> -->
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Mongo DB</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section">
+            <span class="section__subtitle"></span>
+            <h2 class="section__title">My Expertise</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">Programming <br> Languages</h3>
+
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Programing Languages</h3>
+
+                            <p class="services__modal-description">
+                                I specialize in foundational programming languages like C and C++. My expertise goes
+                                beyond basic syntax, allowing me to build robust, scalable systems and solve complex
+                                problems with a hands-on approach. I am skilled in applying core programming concepts to
+                                satisfy modern software needs and industry trends.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Solved complex problems on LeetCode.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Mastered core data structures and algorithms.
+
+
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Developed efficient, scalable solutions for challenges.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Applied logical problem-solving techniques effectively.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Honed foundational software engineering skills.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Web <br> Technologies</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Web Technologies</h3>
+
+                            <p class="services__modal-description">
+                                I am proficient in modern web development technologies, specializing in front-end
+                                development using HTML, CSS, JavaScript, and React. I excel at creating responsive,
+                                dynamic, and intuitive user interfaces that provide an engaging and seamless user
+                                experience.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Developed responsive user interfaces using HTML and CSS.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Engineered dynamic and interactive web pages with JavaScript.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Built modern web applications using the React.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Applied front-end development best practices for optimal performance.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Ensured seamless user experience across various devices.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Core <br> Concepts</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Core Concepts</h3>
+
+                            <p class="services__modal-description">
+                                I have a strong grasp of fundamental computer science principles, including
+                                Object-Oriented Programming (OOP) and Data Structures and Algorithms (DSA). I also have
+                                a solid understanding of Database Management Systems (DBMS) and Operating Systems (OS),
+                                allowing me to design and develop robust and efficient software applications.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Applied OOP principles to build scalable and modular code.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Practiced DSA to create efficient and optimized solutions.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Understood RDBMS and database design for effective data management.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Gained a foundational knowledge of Operating Systems concepts.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Works</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter='all'>All</span>
+                <span class=" work__item" data-filter='.accademic'>Accademic</span>
+                <span class=" work__item" data-filter='.self'>Self</span>
+                <span class=" work__item" data-filter='.team'>Team</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix accademic">
+                    <img src="assets/img/Museum Ticket Booking System.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Museum Ticket Booking System</h3>
+
+                    <a href="https://ajayy-singh.github.io/Museum-Ticket-Booking-System/" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix self">
+                    <img src="assets/img/Netflix Clone.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Netflix Clone</h3>
+
+                    <a href="https://ajayy-singh.github.io/Netflix-Clone/" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix accademic">
+                    <img src="assets/img/Password Manager.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Password Manager</h3>
+
+                    <a href="https://ajayy-singh.github.io/Password_Manager/" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix team">
+                    <img src="assets/img/Attendance Management System.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Attendance Management System <br> using Face Recognition</h3>
+
+                    <a href="https://github.com/Ajayy-Singh/Attendance-Management-System-using-Face-Recognition/"
+                        class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix self">
+                    <img src="assets/img/ToDo App.png" alt="" class="work__img">
+
+                    <h3 class="work__title">ToDo App</h3>
+
+                    <a href="https://ajayy-singh.github.io/ToDoApp/" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix team">
+                    <img src="assets/img/Pragati - An Educational Website.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Pragati - An Educational Website </h3>
+
+                    <a href="https://pragati-an-educational-website.vercel.app/" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <sapn class="section__subtitle">Get in touch</sapn>
+            <h3 class="section__title">Contact Me</h3>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-info">Talk to me</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">ajaysingh1438970@gmail.com</span>
+
+                            <a href="mailto:ajaysingh1438970@gmail.com" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">WhatsApp Me</span>
+
+                            <a href="https://wa.me/919651298145" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-twitter contact__card-icon'></i>
+                            <h3 class="contact__card-title">Twitter</h3>
+                            <a href="https://twitter.com/Ajay_Singh_2005" target="_blank">
+                                <span class="contact__card-data">@Ajay_Singh_2005</span>
+                            </a>
+
+                            <a href="https://twitter.com/messages/compose?recipient_id=1346400245190598657&text=Hello!%20I’d%20like%20to%20connect%20with%20you.
+" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+
+                    <form id="contact-form" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="user-name" class="contact__form-tag">Name</label>
+                            <input type="text" name="user_name" id="user-name" placeholder="Enter name"
+                                class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="user-email" class="contact__form-tag">Mail</label>
+                            <input type="email" name="user_email" id="user-email" placeholder="Enter email"
+                                class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="message" class="contact__form-tag">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your Message"
+                                class="contact__form-input"></textarea>
+                        </div>
+
+                        <button type="submit" class="button">
+                            Send Message
+                        </button>
+                    </form>
+                    <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+                </div>
+
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Ajay Singh</h1>
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="https://github.com/Ajayy-Singh" target="_blank" class="footer__social-link">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAADuklEQVR4AcyWZ8iPXRzHr2c/Patn79GTTUZ2ZCTeIErGC1JC2eWFEbKKwht7hYwyUwqRF0j2CknKjOxNRmR8Ppfr3M7/7rqtJHffz/n9zrivM3/n/D9O3vPfB9NhWSY+AjrA26gZ/zQSakCB8mZYmRb7wH9Yih0Ob6IuNN4ADngntikUKa/DmdR+A0F2/H/IvMJ+T/1kCPoUZz4U9VPkUKiqkNQDNYDkIXwE/eB15Owc7FMa9wL1F0lzSFW8wxZpaZLcxU6C1aDakXSGGbANzoKDuYDdBfOgO3QEtZnEtuexKnw3Kd5hQ2thIzyC0KGjXEC+B7gCf2M/g9+hNjiz2dhwSNbjqzUm0BhSFe+wZlqaJLszuzWzwVzCWQtzYCzMAgd1Bhtre5bZkdny2K+hYIa/UvAzqIMmcBJuwDSoD39AS+gOQ8EZt8L+B85uPPY+HAIVvqNfwSSeYWkLMk5k1s0vhd8HHLV53Fztp3QQ/Am3QZ02ySijjTu0oWXiodCKM9S+Ljejhv6vB9Ci9Ptxh79YCp6+O9h3pavZh37Uxh3+YAHEI/yN/DjwkJTDvkzuo0FvOPwbNQzL+61lcYdfWQDx7HqTHwhdwVOJKVFDqOkLHqTB2KB7mfOlNu7wcwvgAQSl655l/smspjqJsWUMhm+U1NZ4pnniNVcQFu6dFV5NWplKsgc8taOxai6Jl/smrLfMSqyaQHIUDAl93FRpR3jpwNKEjLpoAu6FtwhuciBJEmdhyIRboyJlsbx/zW8hMdaqYvUxqQwrHa/Bghk6aiukCUktyJOHKI7HUXmNKKsDDiac/vT2imfo23WZRmoiSTXI0yoKQ51v3ULyefKeXZZVGIvr9OMOHfV0C8G7zyX+Ar8BBPXEGQNhj3wr3dv4ka5L/XdwBfzlgEl8E9PDGHeY8HcdQtz42q8gfw6CvIHcJw+S96qvgnt2LDTAesAWYd1zv+/sQmgU7OEnNFIukxewcelemrdc/EgbnGHgCjjb1vhLIKgRjqviRfIEvz0chp+goMPHFEwBj7ZPznF8nxSfIE9rJ/JxyJAtkoPzkfZxdlXszFPpfu+llft8DVvQoXkxbpyBS+UAHKW+y3SLBsaeL3rAw2b5cup8nDHJYpJK4K3joHGfyzV+7r1IveHdE9fd3zLGoMHu42t749JlC3j8HaR3cOjInxp+x4Nz6sWnk9wZxvX6/kM3HI+5v97a4ntKffkNH3+7+ta5jHZ0hPoS5YhLrMyp8EH1KvNC9+XvTxuX0v3GfbWeAQAA///LctppAAAABklEQVQDABwQtDlvJ8ONAAAAAElFTkSuQmCC"
+                            alt="Logo" style="width:22px; height:22px; filter: brightness(0) invert(1);">
+
+
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://x.com/Ajay_Singh_2005" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://www.linkedin.com/in/ajay5ingh/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://leetcode.com/u/Ajay5ingh/" target="_blank" class="footer__social-link">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAC1ElEQVR4AcyWSciNURjHX2NiQSKZMpahpGQj84bIFBtbOxLFBhkzFbFhYyg2VqxMKwtjWKAUyZBCsTBuDAvT73d7n+vct/fe+/oW8vX/nec5z3nOed577nnP/Tpn//jvvys4hg3Y0QEmMadU7T7hLmZt7wAHmFOqtGAXMmbCrIQR+Oo9zdUKvCFHDaNJ19HvTixLC64lcAUuJ0zGVzdpnNSOC+SpkTTpOvruVEPBUSQ1069mA4V4qzzPQ0PBmPsKZ3bOHWwzzWk2QPw5xBr38etKtzSCX3HcWvmIr4p5Awmeh3GQqlPe+YJ1vnzCrytdKLYjrEnh/7QDi2AVnAQPwXHsalgKXaGYT6iu2lha0KdytJtNTjxxag8xNhfUVJrD0Ae+Q5pHt6YetTbLPmvTgh8MwAAI1Z6KTtiz+Osg1R46J0BFXlhjQ2zgLTQcmqcGoBd4rDFZPHH6YOkOmOPWaqWY34/gYFCPbdKF0hO5xEGIJ43vkFDWl2YjDALf3Z7YUDF/eQxgb0OWFnxJ4B6oTTT9IRbwQNCtaSvtPvBW8ftbgx+KPOc5f1s+4O490E8L2nchrVtxHScug9gWQi01NB91/jV8i2KynTZSLHia4F5Q3gyjdWAixJePWyqLePU56AOO1QEP1SlsTcWCBjfTLIYnkOpY2inxjxBLD9Qj+gtgC9RVVtDBczR+Qm99F6KbzaO5CB4WTF32zV+WR85gh8N4MB/zR80KRoYHyUNxKQ/Mxxrz+zmI70+W/YX46i7NCngBpWpX0EneIH66/XT0/d2cjr8eZoB9X5uj+NOgdqNgS1WloBN/0GwAT62vha8E3czLfTeO278S+w1aqmrBWMTts8CNPPAQ6wM8w1bS3xastGirpKoFp7CIv21BvG8TCnFfA0LNVbWgL7X/YAVxg/Rm6YhpfUUINVfVgu9YwlegHa/Ja6mqBW+xitvYjvivjfRy/QYAAP//85mIzAAAAAZJREFUAwDb2Jo5EAbb5gAAAABJRU5ErkJggg=="
+                            alt="LeetCode" style="width:22px; height:22px; filter: brightness(0) invert(1);">
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; 2025. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
